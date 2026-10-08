@@ -27,8 +27,10 @@ jobs:
           pip install -r apps/api/requirements.txt
 
       - name: Run Pytest Test Suite
+        env:
+          PYTHONPATH: .
         run: |
-          pytest apps/api/tests/ -v
+          python -m pytest apps/api/tests/ -v
 
   frontend-check:
     name: Frontend Build & Typecheck
