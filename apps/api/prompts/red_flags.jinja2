@@ -1,0 +1,25 @@
+IMPORTANT REMINDER: You are not a lawyer. This assessment provides risk guidance under Kenyan business conditions and is not legal representation.
+
+Identify clauses in this document that are unusual, risky, or unfavourable to an SME owner or service provider.
+For each risky clause, pinpoint:
+- clause_text: the exact or excerpted text of the clause
+- page: the page integer where this clause appears (e.g. 1, 2)
+- severity: "high", "med", or "low"
+- explanation: plain-English explanation of why this clause is dangerous, restrictive, or unbalanced under Kenyan commercial standards
+- suggestion: concrete counter-proposal or clause modification to negotiate with the other party
+
+Return ONLY valid raw JSON with this exact structure (no surrounding markdown or backticks):
+{
+  "red_flags": [
+    {
+      "clause_text": "...",
+      "page": 1,
+      "severity": "high",
+      "explanation": "...",
+      "suggestion": "..."
+    }
+  ]
+}
+
+Document Text:
+{{ document }}
