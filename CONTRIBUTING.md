@@ -1,12 +1,12 @@
 # Contributing to Counsel AI
 
-Thank you for your interest in contributing to **Counsel AI**! We welcome bug reports, feature suggestions, documentation enhancements, and pull requests.
+Thank you for your interest in contributing to **Counsel AI**! I welcome bug reports, feature suggestions, documentation enhancements, and pull requests.
 
 ## 🚀 Development Setup
 
 1. **Fork and clone the repository**:
    ```bash
-   git clone https://github.com/your-username/counsel-ai.git
+   git clone https://github.com/crnjihia/counsel-ai.git
    cd counsel-ai
    ```
 
