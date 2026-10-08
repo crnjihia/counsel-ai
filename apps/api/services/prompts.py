@@ -14,7 +14,7 @@ def get_system_prompt() -> str:
     path = PROMPTS_DIR / "system.md"
     if path.exists():
         return path.read_text(encoding="utf-8")
-    return "You are Mshauri, a legal assistant for Kenyan SMEs. You are not a lawyer."
+    return "You are Counsel, a legal assistant for Kenyan SMEs. You are not a lawyer."
 
 def render_summary(document_text: str) -> str:
     template = env.get_template("summary.jinja2")

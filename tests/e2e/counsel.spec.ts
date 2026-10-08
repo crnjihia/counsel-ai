@@ -1,13 +1,13 @@
 import { test, expect } from "@playwright/test";
 import path from "path";
 
-test.describe("Mshauri AI End-to-End User Flow", () => {
+test.describe("Counsel AI End-to-End User Flow", () => {
   test("Upload Kenyan NDA -> get summary -> verify red flags -> send chat -> verify streaming tokens", async ({
     page,
   }) => {
     // 1. Visit landing page
     await page.goto("/");
-    await expect(page).toHaveTitle(/Mshauri AI/);
+    await expect(page).toHaveTitle(/Counsel AI/);
     await expect(page.getByText("Protect your Kenyan business before you sign")).toBeVisible();
 
     // 2. Upload sample PDF
@@ -20,7 +20,7 @@ test.describe("Mshauri AI End-to-End User Flow", () => {
     expect(page.url()).toMatch(/\/documents\/\d+/);
 
     // 4. Verify Document viewer and Kenyan disclaimer
-    await expect(page.getByText("Legal Disclaimer: Mshauri is an AI legal assistant")).toBeVisible();
+    await expect(page.getByText("Legal Disclaimer: Counsel is an AI legal assistant")).toBeVisible();
     await expect(page.getByText("Document Viewer")).toBeVisible();
 
     // 5. Verify Plain-English Summary tab
@@ -43,7 +43,7 @@ test.describe("Mshauri AI End-to-End User Flow", () => {
     // 7. Switch to Clarification Chat tab
     const chatTab = page.locator("#tab-chat-btn");
     await chatTab.click();
-    await expect(page.getByText("Ask Mshauri Anything")).toBeVisible();
+    await expect(page.getByText("Ask Counsel Anything")).toBeVisible();
 
     // 8. Send chat query and verify real-time SSE streaming tokens appear
     const chatInput = page.locator("#chat-input-field");
@@ -61,7 +61,7 @@ test.describe("Mshauri AI End-to-End User Flow", () => {
     await expect(assistantBubble.first()).toBeVisible({ timeout: 10000 });
 
     // Verify content streams in and token citations appear
-    await expect(assistantBubble.first()).toContainText(/Mshauri|Clause|KES|liquidated/i, {
+    await expect(assistantBubble.first()).toContainText(/Counsel|Clause|KES|liquidated/i, {
       timeout: 15000,
     });
   });

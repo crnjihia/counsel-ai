@@ -82,7 +82,7 @@ async def build_conversation_context(
 
     formatted_history = []
     for msg in recent_messages:
-        role_label = "User" if msg.role == "user" else "Mshauri (Assistant)"
+        role_label = "User" if msg.role == "user" else "Counsel (Assistant)"
         formatted_history.append(f"{role_label}: {msg.content}")
 
     history_str = "\n".join(formatted_history) if formatted_history else "No previous conversation turns."

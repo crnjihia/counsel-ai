@@ -134,7 +134,7 @@ async def test_chat_streaming_and_history(client, monkeypatch):
     assert "text/event-stream" in chat_res.headers["content-type"]
     assert "event: token" in chat_res.text
     assert "event: done" in chat_res.text
-    assert "Mshauri" in chat_res.text
+    assert "Counsel" in chat_res.text
 
     # 3. Check history persistence
     hist_res = await client.get(f"/conversations/{conv_id}/messages?user_id=1")

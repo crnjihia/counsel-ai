@@ -1,8 +1,8 @@
-# Mshauri AI Monorepo
+# Counsel AI Monorepo
 
 ## Repository Tree
 ```
-mshauri-ai/
+counsel-ai/
 ├── apps/
 │   ├── api/
 │   │   ├── main.py
@@ -84,7 +84,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from .routers import documents, conversations, usage
 from .config import settings
 
-app = FastAPI(title="Mshauri AI API", version="0.1.0")
+app = FastAPI(title="Counsel AI API", version="0.1.0")
 
 # CORS (adjust origins as needed)
 app.add_middleware(
@@ -649,7 +649,7 @@ async def get_system() -> str:
 
 ### `apps/api/prompts/system.md`
 ```markdown
-You are Mshauri, a legal assistant for Kenyan SMEs. You explain documents in plain English, flag risky clauses, and suggest lawyer questions. You are NOT a lawyer and must state this when giving legal opinions. Always cite page numbers using the format [p. N]. Keep responses concise and practical.
+You are Counsel, a legal assistant for Kenyan SMEs. You explain documents in plain English, flag risky clauses, and suggest lawyer questions. You are NOT a lawyer and must state this when giving legal opinions. Always cite page numbers using the format [p. N]. Keep responses concise and practical.
 ```
 
 ### `apps/api/prompts/summary.jinja2`
@@ -809,7 +809,7 @@ import UploadZone from "../components/UploadZone";
 const HomePage: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Mshauri AI – Document Analyzer</h1>
+      <h1 className="text-2xl font-bold mb-4">Counsel AI – Document Analyzer</h1>
       <UploadZone />
     </div>
   );
@@ -1179,7 +1179,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: example
-      POSTGRES_DB: mshauri
+      POSTGRES_DB: Counsel
     ports:
       - "5432:5432"
     volumes:
@@ -1236,7 +1236,7 @@ volumes:
 ```dotenv
 # Backend configuration
 ANTHROPIC_API_KEY=your-anthropic-api-key
-DATABASE_URL=postgresql+asyncpg://postgres:example@postgres:5432/mshauri
+DATABASE_URL=postgresql+asyncpg://postgres:example@postgres:5432/Counsel
 REDIS_URL=redis://redis:6379/0
 DAILY_TOKEN_CAP=100000
 DEBUG=true
@@ -1270,19 +1270,19 @@ if __name__ == "__main__":
 
 ## README (`README.md`)
 ```markdown
-# Mshauri AI
+# Counsel AI
 
-[![CI](https://github.com/your-org/mshauri-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/mshauri-ai/actions)
+[![CI](https://github.com/your-org/counsel-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/counsel-ai/actions)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![Node 20+](https://img.shields.io/badge/node-20%2B-success.svg)](https://nodejs.org/)
 
-**Mshauri AI** is an AI‑powered legal assistant for Kenyan SMEs. Upload a contract PDF and receive:
+**Counsel AI** is an AI‑powered legal assistant for Kenyan SMEs. Upload a contract PDF and receive:
 - Plain‑English summary
 - Red‑flag clause list with severity and suggestions
 - A set of lawyer‑question prompts
 - Interactive multi‑turn chat with streaming responses
 
-> ⚠️ **Legal disclaimer**: Mshauri is *not a lawyer*. All output is for informational purposes only and should be reviewed by a qualified legal professional.
+> ⚠️ **Legal disclaimer**: Counsel is *not a lawyer*. All output is for informational purposes only and should be reviewed by a qualified legal professional.
 
 ## Quickstart
 ```bash
@@ -1371,7 +1371,7 @@ The generated file will be located at `samples/sample-nda.pdf`.
 
 ---
 
-## Playwright E2E Test (`apps/web/e2e/tests/mshauri.e2e.ts`)
+## Playwright E2E Test (`apps/web/e2e/tests/Counsel.e2e.ts`)
 ```ts
 import { test, expect } from "@playwright/test";
 import path from "path";

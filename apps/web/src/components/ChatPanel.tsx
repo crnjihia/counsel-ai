@@ -113,7 +113,7 @@ export const ChatPanel: React.FC<ChatPanelProps> = ({ conversationId, onPageClic
               <Bot className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-semibold text-white text-base">Ask Mshauri Anything</h4>
+              <h4 className="font-semibold text-white text-base">Ask Counsel Anything</h4>
               <p className="text-xs text-slate-400 mt-1 leading-relaxed">
                 Clarify clauses, test negotiation tactics, and get plain-English explanations with direct page references `[p. N]`.
               </p>

@@ -80,7 +80,7 @@ def mock_claude(monkeypatch):
             )
 
     async def mock_stream_chat_completion(prompt: str, **kwargs):
-        tokens = ["Mshauri ", "legal ", "assistant: ", "According ", "to [p. 1], ", "you ", "should ", "negotiate."]
+        tokens = ["Counsel ", "legal ", "assistant: ", "According ", "to [p. 1], ", "you ", "should ", "negotiate."]
         for token in tokens:
             yield token
 

@@ -25,7 +25,7 @@ export const HomePage: React.FC = () => {
             <Scale className="w-5 h-5" />
           </div>
           <div>
-            <span className="font-bold text-white text-lg tracking-tight">Mshauri AI</span>
+            <span className="font-bold text-white text-lg tracking-tight">Counsel AI</span>
             <span className="text-[10px] ml-2 px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800/80 uppercase font-semibold">
               Kenyan SMEs
             </span>
@@ -61,7 +61,7 @@ export const HomePage: React.FC = () => {
           </p>
 
           <div className="pt-2 text-xs text-amber-300/80 bg-amber-950/30 border border-amber-900/40 rounded-xl py-2 px-4 inline-block">
-            ⚖️ <strong>Legal Notice:</strong> Mshauri is an AI assistant, not an Advocate of the High Court of Kenya. Information is for negotiation preparation.
+            ⚖️ <strong>Legal Notice:</strong> Counsel is an AI assistant, not an Advocate of the High Court of Kenya. Information is for negotiation preparation.
           </div>
         </div>
 
@@ -151,7 +151,7 @@ export const HomePage: React.FC = () => {
 
       {/* Footer */}
       <footer className="border-t border-slate-800/80 py-6 text-center text-xs text-slate-400">
-        <p>Mshauri AI — Empowering Kenyan Micro, Small & Medium Enterprises with Legal Document Intelligence</p>
+        <p>Counsel AI — Empowering Kenyan Micro, Small & Medium Enterprises with Legal Document Intelligence</p>
       </footer>
     </div>
   );

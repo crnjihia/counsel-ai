@@ -121,7 +121,7 @@ export const DocumentPage: React.FC = () => {
       <div className="bg-amber-950/40 border-b border-amber-900/40 px-4 py-1.5 text-center text-[11px] text-amber-200/90 flex items-center justify-center gap-2">
         <Scale className="w-3.5 h-3.5 text-amber-400 shrink-0" />
         <span>
-          <strong>Legal Disclaimer:</strong> Mshauri is an AI legal assistant, not an advocate of the High Court of Kenya. Information provided is for negotiation preparation and SME guidance only.
+          <strong>Legal Disclaimer:</strong> Counsel is an AI legal assistant, not an advocate of the High Court of Kenya. Information provided is for negotiation preparation and SME guidance only.
         </span>
       </div>
 
@@ -361,7 +361,7 @@ export const DocumentPage: React.FC = () => {
                 ) : (
                   <div className="p-8 text-center text-slate-400 text-sm">
                     <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-emerald-400" />
-                    Connecting to Mshauri session...
+                    Connecting to Counsel session...
                   </div>
                 )}
               </div>

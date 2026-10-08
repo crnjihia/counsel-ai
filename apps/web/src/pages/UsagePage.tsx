@@ -32,7 +32,7 @@ export const UsagePage: React.FC = () => {
         <div>
           <h2 className="text-2xl font-extrabold text-white">Daily & Monthly Consumption</h2>
           <p className="text-sm text-slate-400 mt-1">
-            Mshauri AI enforces strict per-user daily token caps (100,000 tokens) to eliminate unexpected LLM cost spikes.
+            Counsel AI enforces strict per-user daily token caps (100,000 tokens) to eliminate unexpected LLM cost spikes.
           </p>
         </div>
 

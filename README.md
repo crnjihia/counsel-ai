@@ -1,4 +1,4 @@
-# Mshauri AI (Legal & Business Document Assistant for Kenyan SMEs)
+# Counsel AI (Legal & Business Document Assistant for Kenyan SMEs)
 
 [![CI Build](https://img.shields.io/badge/CI-Passing-emerald?style=flat-square&logo=githubactions)](https://github.com/)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=flat-square&logo=python)](https://python.org)
@@ -6,13 +6,13 @@
 [![License](https://img.shields.io/badge/License-MIT-amber?style=flat-square)](LICENSE)
 [![Jurisdiction](https://img.shields.io/badge/Jurisdiction-Kenya%20(Commercial)-red?style=flat-square)](#)
 
-> **Mshauri AI** is an AI legal and commercial document assistant designed specifically for Kenyan SMEs, decoding dense agreements into plain-English summaries, identifying high-risk clauses with page citations, generating lawyer consultation questions, and powering multi-turn clarification chat with real-time SSE streaming.
+> **Counsel AI** is an AI legal and commercial document assistant designed specifically for Kenyan SMEs, decoding dense agreements into plain-English summaries, identifying high-risk clauses with page citations, generating lawyer consultation questions, and powering multi-turn clarification chat with real-time SSE streaming.
 
 ---
 
 ### ⚠️ Mandatory Legal Disclaimer
-> **Mshauri is an artificial intelligence assistant, NOT an Advocate of the High Court of Kenya or a registered legal practitioner.**  
-> Information, analyses, suggestions, and answers provided by Mshauri AI do **not** constitute legal representation or binding legal counsel. All outputs are generated for commercial awareness, negotiation preparation, and educational empowerment. Kenyan entrepreneurs should always verify key terms with a certified Kenyan Advocate prior to executing high-liability agreements.
+> **Counsel is an artificial intelligence assistant, NOT an Advocate of the High Court of Kenya or a registered legal practitioner.**  
+> Information, analyses, suggestions, and answers provided by Counsel AI do **not** constitute legal representation or binding legal counsel. All outputs are generated for commercial awareness, negotiation preparation, and educational empowerment. Kenyan entrepreneurs should always verify key terms with a certified Kenyan Advocate prior to executing high-liability agreements.
 
 ---
 

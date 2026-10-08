@@ -7,7 +7,7 @@ class Settings(BaseSettings):
 
     DEBUG: bool = Field(default=False)
     DATABASE_URL: str = Field(
-        default="postgresql+asyncpg://mshauri:mshauri_secret@localhost:5432/mshauri_db",
+        default="postgresql+asyncpg://counsel:counsel_secret@localhost:5432/counsel_db",
         description="Async SQLAlchemy database connection string"
     )
     REDIS_URL: str = Field(

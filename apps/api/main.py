@@ -16,21 +16,21 @@ structlog.configure(
         structlog.processors.JSONRenderer(),
     ]
 )
-logger = structlog.get_logger("mshauri.api")
+logger = structlog.get_logger("counsel.api")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Initializing Mshauri AI application...")
+    logger.info("Initializing Counsel AI application...")
     try:
         await init_db()
         logger.info("Database initialized successfully.")
     except Exception as e:
         logger.error("Database connection warning during init", error=str(e))
     yield
-    logger.info("Shutting down Mshauri AI API...")
+    logger.info("Shutting down Counsel AI API...")
 
 app = FastAPI(
-    title="Mshauri AI API",
+    title="Counsel AI API",
     description="AI legal and business document assistant for Kenyan SMEs",
     version="1.0.0",
     lifespan=lifespan,
@@ -55,7 +55,7 @@ async def health_check():
     """Health check endpoint for container readiness and monitoring."""
     return {
         "status": "ok",
-        "app": "Mshauri AI",
+        "app": "Counsel AI",
         "jurisdiction": "Kenya (SME Commercial Guidance)",
         "version": "1.0.0",
     }
