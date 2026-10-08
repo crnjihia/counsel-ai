@@ -25,6 +25,9 @@ wheels/
 htmlcov/
 .venv/
 uploads/
+*.db
+*.sqlite3
+*.sqlite
 
 # Node
 node_modules/
